@@ -1,6 +1,7 @@
 <?php
-    include("../php/isLoged.php");
-    include("../php/link_db.php");
+    include('../php/link_db.php');
+    include('../php/isLoged.php');
+    itsAllowed(10);
 
     if (array_key_exists('id', $_GET)) {
         $id = $_GET['id'];

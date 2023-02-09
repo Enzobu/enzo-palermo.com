@@ -2,6 +2,7 @@
 
 include('../php/link_db.php');
 include('../php/isLoged.php');
+itsAllowed(10);
 
 if (array_key_exists('id', $_GET) and !empty($_GET['id']) and
     array_key_exists('date_candid', $_GET) and !empty($_GET['date_candid']) and

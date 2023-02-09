@@ -8,7 +8,7 @@
     <title>Accueil - Enzo Palermo</title>
 </head>
 <body>
-    <script src="/js\tableau_suivi_stage.js"></script>
+    <script src="/js/tableau_suivi_stage.js"></script>
     <header class="header">
         <?php include('../php/navbar.php'); ?>
     </header>
