@@ -9,17 +9,66 @@
   text-align: center;
   margin-top: 1.5rem;
 }
-.global-container table {
+.global-container .bouton-action {
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  padding: 1rem 0.5rem;
+  border: solid 0px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px #9c9c9c;
+  text-align: center;
+  transition: 0.25s;
+  color: #000;
+  font-weight: 600;
+}
+.global-container .bouton-action:hover {
+  transform: translateY(-4px);
+}
+.global-container .bouton-action:active {
+  background: rgb(242, 242, 242);
+}
+.global-container .global-tableau .tableau {
   border: solid 1px #000;
   border-spacing: 0;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 3rem;
   margin-bottom: 5rem;
+  max-width: 1600px;
 }
-.global-container table th, .global-container table td {
+.global-container .global-tableau .tableau .ligne-ajouter {
+  display: none;
+}
+.global-container .global-tableau .tableau th, .global-container .global-tableau .tableau td {
   border: solid 1px #000;
   padding: 0rem 0.5rem;
+}
+.global-container .global-tableau .tableau input {
+  width: 100%;
+  margin: 0.25rem;
+  border: solid 1px #c4c4c4;
+  border-radius: 5px;
+  height: 1.5rem;
+}
+.global-container .global-tableau .tableau input[type=submit] {
+  border: solid 0px;
+  border-radius: 10px;
+  background: rgba(255, 0, 0, 0.438);
+  box-shadow: 0px 0px 10px #9c9c9c;
+  text-align: center;
+  transition: 0.25s;
+  color: #000;
+  font-weight: 600;
+}
+.global-container .global-tableau .tableau input[type=submit]:hover {
+  transform: translateY(-4px);
+}
+.global-container .global-tableau .tableau input[type=submit]:active {
+  background: rgb(242, 242, 242);
 }
 
 @media only screen and (max-width: 1200px) {
