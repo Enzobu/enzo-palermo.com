@@ -43,6 +43,9 @@
 .global-container .global-tableau .tableau .ligne-ajouter {
   display: none;
 }
+.global-container .global-tableau .tableau .ligne-modifier {
+  display: none;
+}
 .global-container .global-tableau .tableau th, .global-container .global-tableau .tableau td {
   border: solid 1px #000;
   padding: 0rem 0.5rem;
@@ -65,17 +68,24 @@
   font-weight: 600;
 }
 .global-container .global-tableau .tableau input[type=submit]:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 .global-container .global-tableau .tableau input[type=submit]:active {
   background: rgb(242, 242, 242);
+}
+.global-container .global-tableau .tableau .image-bouton-action {
+  width: 1.5rem;
 }
 
 @media only screen and (max-width: 1200px) {
   .global-container {
     display: block;
   }
-  .global-container .tableau {
+  .global-container .bouton {
+    display: flex;
+    justify-content: center;
+  }
+  .global-container .global-tableau {
     overflow: scroll;
   }
 }/*# sourceMappingURL=tableau_suivi_stage.css.map */

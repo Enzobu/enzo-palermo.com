@@ -50,6 +50,10 @@
                 display: none;
             }
 
+            & .ligne-modifier {
+                display: none;
+            }
+
             & th, & td{
                 border: solid 1px #000;
                 padding: 0rem .5rem;
@@ -74,12 +78,16 @@
                 font-weight: 600;
 
                 &:hover {
-                    transform: translateY(-4px);
+                    transform: translateY(-3px);
                 }
 
                 &:active {
                     background: rgb(242, 242, 242);
                 }
+            }
+
+            & .image-bouton-action {
+                width: 1.5rem;
             }
         }
     }
@@ -91,7 +99,11 @@
     .global-container {
         display: block;
         
-        & .tableau {
+        & .bouton {
+            display: flex;
+            justify-content: center;
+        }
+        & .global-tableau {
             overflow: scroll;
         }
     }
