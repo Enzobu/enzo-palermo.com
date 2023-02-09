@@ -65,6 +65,7 @@
                 border: solid 1px #c4c4c4;
                 border-radius: 5px;
                 height: 1.5rem;
+                padding: 0 .25rem;
             }
 
             & input[type='submit'] {
@@ -105,6 +106,7 @@
         }
         & .global-tableau {
             overflow: scroll;
+            margin: 0 .5rem;
         }
     }
 }

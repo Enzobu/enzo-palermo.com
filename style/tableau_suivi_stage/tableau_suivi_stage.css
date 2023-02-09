@@ -56,6 +56,7 @@
   border: solid 1px #c4c4c4;
   border-radius: 5px;
   height: 1.5rem;
+  padding: 0 0.25rem;
 }
 .global-container .global-tableau .tableau input[type=submit] {
   border: solid 0px;
@@ -87,5 +88,6 @@
   }
   .global-container .global-tableau {
     overflow: scroll;
+    margin: 0 0.5rem;
   }
 }/*# sourceMappingURL=tableau_suivi_stage.css.map */
