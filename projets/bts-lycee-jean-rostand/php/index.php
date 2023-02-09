@@ -10,6 +10,7 @@
     </header>
 
     <h1>Bts - Lycée Jean Rostand</h1>
+    <h2 style="color: red;">ATTENTION : ETRE BIEN DANS LA BRANCHE GIT-HUB DU PROJET</h2>
 
     <footer>
         <?php include("php/part/footer.php"); ?>
