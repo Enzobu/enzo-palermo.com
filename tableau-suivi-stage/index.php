@@ -87,6 +87,9 @@
                     <td> <?php echo $stages['date_relance']; ?> </td>
                     <td> <?php echo $stages['etat']; ?> </td>
                     <td> <?php echo $stages['commentaire']; ?> </td>
+                    <td class="bouton-action-ligne">
+                        <!-- <a href="/tableau-suivi-stage/supprimer.php?id=<?php echo $stages['id']; ?>"><img src="/image/effacer_rouge.svg" alt="Icone effacer" class="image-bouton-action"></a> -->
+                        <img src="/image/effacer_rouge.svg" alt="Icone effacer" class="image-bouton-action" onclick="effacer(<?php echo $stages['id']; ?>);">
                         <img src="/image/editer.svg" alt="Icone éditer" class="image-bouton-action" onclick="modifier(<?php echo $stages['id']; ?>);">
                     </td>
                 </tr>
