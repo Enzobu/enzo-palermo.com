@@ -1,0 +1,11 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border-style: border-box;
+  list-style: none;
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */
