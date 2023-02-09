@@ -17,7 +17,9 @@
         <div class="title">
             <h1>Tableau de suivi de la recherche de stage</h1>
         </div>
-        <button class="bouton-action" onclick="ajouter();">Ajouter une ligne</button>
+        <div class="bouton">
+            <button class="bouton-action" onclick="ajouter();">Ajouter une ligne</button>
+        </div>
         <div class="global-tableau">
             
             <?php
