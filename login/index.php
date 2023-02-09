@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -21,7 +20,10 @@
                     <?php 
                         if (array_key_exists('error', $_GET)) {
                             if ($_GET['error'] == 'notLog') {
-                                echo 'Il faut être connecter pour faire l\'action demander';
+                                echo 'Il faut être connecter pour réaliser l\'action demander';
+                            }
+                            if ($_GET['error'] == 'notAllowed') {
+                                echo 'Vous n\'avez pas les droits nécessaire pour réaliser l\'action demander';
                             }
                             if ($_GET['error'] == 'falseValue') {
                                 echo 'Mauvais identifiant ou mot de passe';
@@ -37,22 +39,37 @@
 </html>
 
 <?php
-    $id = 'enzo.palermo';
-    $pass = '$2y$10$Tx5ms9xVTZ/Nc8PoxOovu.acIZcYak.K7yPet5rQokhOTJ3Kz3UGy';
+
+    include('../php/link_db.php');
+    // $id = 'enzo.palermo';
+    // $pass = '$2y$10$Tx5ms9xVTZ/Nc8PoxOovu.acIZcYak.K7yPet5rQokhOTJ3Kz3UGy';
+
+    $sql = "SELECT * FROM `users_enzo_palermo`";
+    $requete = $db->query($sql);
+    $users = $requete->fetchAll();
 
     if(array_key_exists('id', $_POST) and array_key_exists('pass', $_POST)) {
-        if ($_POST['id'] == $id and password_verify($_POST['pass'], $pass)) {
-            $_SESSION['id'] = $id;
-            header('location: /');
-        } else {
-            header('location: ?error=falseValue');
+        foreach ($users as $user) {
+            if ($_POST['id'] == $user['id'] and password_verify($_POST['pass'], $user['pass'])) {
+               $_SESSION['id'] = $user['id'];
+               header('location: /');
+               die();
+           }
         }
+        header('location: ?error=falseValue');
+
     }
 
-    if(array_key_exists('session', $_GET)) {
-        if ($_GET['session'] == 'destroy') {
-            session_destroy();
-            header('location: /');
-        }
-    }
+    // if(array_key_exists('session', $_GET)) {
+    //     if ($_GET['session'] == 'destroy') {
+    //         session_destroy();
+    //         header('location: /');
+    //     }
+    // }
+
+    // foreach ($users as $user) {
+    //     if ($_SESSION['id'] == $user['id']) {
+    //         $a = $user['permission'];
+    //     }
+    // }
 ?>
