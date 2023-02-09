@@ -1,0 +1,198 @@
+.bg-body-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-body-1 .compo-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 1.5rem;
+}
+.bg-body-1 .compo-menu .compo-item {
+  justify-self: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgb(228, 228, 228);
+  margin: 1rem;
+}
+.bg-body-1 .compo-menu .compo-item .body-compo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  text-align: center;
+}
+.bg-body-1 .compo-menu .compo-item .body-compo-item img {
+  max-width: 8rem;
+  width: 100%;
+}
+.bg-body-1 .compo-menu .compo-item .footer-compo-item {
+  display: flex;
+  width: 15rem;
+  padding: 0.25rem;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  border-top: solid 1px rgb(243, 243, 243);
+}
+.bg-body-1 .compo-menu .compo-item .footer-compo-item .ajouter-button {
+  margin-bottom: 1.5rem;
+}
+* .bg-body-1 .compo-menu .compo-item .footer-compo-item .ajouter-button:hover img {
+  transform: scale(1.1);
+}
+.bg-body-1 .compo-menu .compo-item .footer-compo-item .ajouter-button:active img:nth-child(1) {
+  visibility: hidden;
+}
+.bg-body-1 .compo-menu .compo-item .footer-compo-item .ajouter-button:active img:nth-child(2) {
+  visibility: visible;
+}
+.bg-body-1 .compo-menu .compo-item .footer-compo-item .ajouter-button img {
+  max-width: 1.5rem;
+  width: 100%;
+  border-radius: 100%;
+  position: absolute;
+}
+.bg-body-1 .compo-menu .compo-item .footer-compo-item .ajouter-button img:nth-child(2) {
+  visibility: hidden;
+}
+
+.bg-body-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+  max-width: 500rem;
+  width: 100%;
+  background: rgb(69, 255, 94);
+}
+.bg-body-4 .title-mail {
+  font-size: 1.6rem;
+  font-weight: bolder;
+  margin-bottom: 4rem;
+  color: #514b52;
+  text-transform: uppercase;
+}
+.bg-body-4 .text-mail {
+  margin: 0 2.5rem;
+  color: #514b52;
+}
+.bg-body-4 form {
+  margin-top: 3rem;
+}
+.bg-body-4 form input {
+  height: 3rem;
+  border: solid 2px #000;
+  border-radius: 10px;
+  margin: 0 0.75rem;
+  color: #514b52;
+}
+.bg-body-4 form input[type=mail] {
+  width: 15rem;
+  padding: 0 1rem;
+  color: #000;
+  background: rgb(69, 255, 94);
+}
+.bg-body-4 form input[type=submit] {
+  width: 5rem;
+  color: #000;
+  background: rgb(69, 255, 94);
+  transition: 0.4s;
+}
+.bg-body-4 form input[type=submit]:hover {
+  color: rgb(69, 255, 94);
+  background: #000;
+}
+
+@media only screen and (max-width: 1050px) {
+  .bg-body-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    max-width: 500rem;
+    width: 100%;
+    background: rgb(69, 255, 94);
+    padding: 0 0.5rem;
+  }
+  .bg-body-4 .title-mail {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  .bg-body-4 .text-mail {
+    margin: 0 2.5rem;
+    text-align: justify;
+  }
+  .bg-body-4 form {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bg-body-4 form input {
+    height: 3rem;
+    border: solid 2px #000;
+    border-radius: 10px;
+    margin: 0 0.75rem;
+    margin-top: 3rem;
+  }
+  .bg-body-4 form input[type=mail] {
+    width: 15rem;
+    padding: 0 1rem;
+    color: #000;
+    background: rgb(69, 255, 94);
+  }
+  .bg-body-4 form input[type=submit] {
+    width: 5rem;
+    color: #000;
+    background: rgb(69, 255, 94);
+    transition: 0.4s;
+  }
+  .bg-body-4 form input[type=submit]:hover {
+    color: rgb(69, 255, 94);
+    background: #000;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .bg-body-4 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bg-body-4 form input {
+    margin: 0.5rem;
+  }
+}
+@media only screen and (max-width: 385px) {
+  .bg-body-4 {
+    height: 26rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .bg-body-4 form {
+    margin-top: 2rem;
+  }
+  .bg-body-4 form input {
+    margin: 0.5rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .bg-body-4 {
+    height: 28rem;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 262px) {
+  .bg-body-4 {
+    height: 30rem;
+    padding: 0;
+  }
+}/*# sourceMappingURL=menu_simple.css.map */

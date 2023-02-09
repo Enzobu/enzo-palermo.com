@@ -1,0 +1,33 @@
+.box{
+    position: absolute;
+    height: 650px;
+    width: 380px;
+    background: #B59F84;
+    border-radius: 8px;
+    overflow: hidden;
+    top:10%;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    height: 650px;
+    width: 380px;
+    top: -50%;
+    left:-50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #F9F9FB, #F9F9FB);
+    animation: animate 10s linear infinite;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    height: 650px;
+    width: 380px;
+    top: -50%;
+    left:-50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #F9F9FB, #F9F9FB);
+    animation: animate 10s linear infinite;
+    animation-delay: -5s;
+}

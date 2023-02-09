@@ -1,0 +1,273 @@
+// ---------------------------------------------------------------
+// ---------------------------------------------------------------
+// -------------------------- Variables --------------------------
+// ---------------------------------------------------------------
+// ---------------------------------------------------------------
+
+$blanc: #fff;
+$noir: #000;
+$texte: #514b52;
+$vert-base: rgb(69, 255, 94);
+$noir-op_0_75: rgba(0, 0, 0, 0.75);
+$bleu-vert-pastel: rgb(230, 255, 230);
+$vert-fonce: rgb(0, 94, 15);
+$footer_menu_background_color: rgba(255, 255, 255, 0.3);
+$shadow-compo-item: rgb(228, 228, 228);
+$border-top-footer-compo-menu: rgb(243, 243, 243);;
+
+// ---------------------------------------------------------------
+// ---------------------------------------------------------------
+// -------------------------- Variables --------------------------
+// ---------------------------------------------------------------
+// ---------------------------------------------------------------
+
+
+.bg-body-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .compo-menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+        width: 100%;
+        margin: 1.5rem;
+        
+        & .compo-item {
+            // background: #e7e7e7;
+            justify-self: center;
+            align-items: center;
+            box-shadow: 0px 0px 10px $shadow-compo-item;
+            margin: 1rem;
+
+            & .body-compo-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 15rem;
+                margin: .5rem 0;
+                padding: .75rem;
+                text-align: center;
+
+                & img {
+                    max-width: 8rem;
+                    width: 100%;
+                }
+            }
+
+            & .footer-compo-item {
+                display: flex;
+                width: 15rem;
+                padding: .25rem;
+                align-items: center;
+                justify-content: space-around;
+                text-align: center;
+                border-top: solid 1px $border-top-footer-compo-menu;
+
+                & .ajouter-button {
+                    margin-bottom: 1.5rem;*
+
+                    &:hover {
+                        & img {
+                            transform: scale(1.1);
+                        }
+                    }
+                    
+                    &:active {
+
+                        & img:nth-child(1) {
+                            visibility: hidden;
+                        }
+                        
+                        & img:nth-child(2) {
+                            visibility: visible;
+                        }
+                    }
+
+                    & img {
+                        max-width: 1.5rem;
+                        width: 100%;
+                        border-radius: 100%;
+                        position: absolute;
+                    }
+
+                    & img:nth-child(2) {
+                        visibility: hidden;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+.bg-body-4 {
+    // Restons en contact
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    max-width: 500rem;
+    width: 100%;
+    background: $vert-base;
+
+    & .title-mail {
+        font-size: 1.6rem;
+        font-weight: bolder;
+        margin-bottom: 4rem;
+        color: $texte;
+        text-transform: uppercase;
+    }
+
+    & .text-mail {
+        margin: 0 2.5rem;
+        color: $texte;
+    }
+
+    & form {
+        margin-top: 3rem;
+        
+        & input {
+            height: 3rem;
+            border: solid 2px $noir;
+            border-radius: 10px;
+            margin: 0 0.75rem;
+            color: $texte;
+        }
+        & input[type=mail] {
+            width: 15rem;
+            padding: 0 1rem;
+            color: $noir;
+            background: $vert-base;
+        }
+        
+        & input[type=submit] {
+            width: 5rem;
+            color: #000;
+            background: $vert-base;
+            transition: .4s;
+
+            &:hover {
+                color: $vert-base;
+                background: $noir;
+            }
+        }
+    }
+}
+
+
+// ========================================== BREAK-POINT ==========================================
+// ========================================== BREAK-POINT ==========================================
+// ========================================== BREAK-POINT ==========================================
+// ========================================== BREAK-POINT ==========================================
+// ========================================== BREAK-POINT ==========================================
+
+@media only screen and (max-width: 1050px) {
+    // Réajustement taille restons en contact
+    .bg-body-4 {
+        // Restons en contact
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 25rem;
+        max-width: 500rem;
+        width: 100%;
+        background: $vert-base;
+        padding: 0 .5rem;
+    
+        & .title-mail {
+            font-size: 1.6rem;
+            font-weight: bolder;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+        
+        & .text-mail {
+            margin: 0 2.5rem;
+            text-align: justify;
+
+        }
+    
+        & form {
+            display: flex;
+            justify-content: space-between;
+            & input {
+                height: 3rem;
+                border: solid 2px $noir;
+                border-radius: 10px;
+                margin: 0 0.75rem;
+                margin-top: 3rem;
+            }
+            & input[type=mail] {
+                width: 15rem;
+                padding: 0 1rem;
+                color: $noir;
+                background: $vert-base;
+            }
+            
+            & input[type=submit] {
+                width: 5rem;
+                color: $noir;
+                background: $vert-base;
+                transition: .4s;
+    
+                &:hover {
+                    color: $vert-base;
+                    background: $noir;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .bg-body-4 {
+
+        & form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & input {
+                margin: .5rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 385px) {
+    .bg-body-4 {
+        height: 26rem;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .bg-body-4 {
+
+        & form {
+            margin-top: 2rem;
+            & input {
+                margin: .5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {    
+    .bg-body-4 {
+        height: 28rem;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 262px) {
+    .bg-body-4 {
+        height: 30rem;
+        padding: 0;
+    }
+}

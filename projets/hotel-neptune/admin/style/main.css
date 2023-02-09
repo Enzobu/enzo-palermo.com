@@ -1,0 +1,186 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border-style: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    background-color: none;
+    font-family: "Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+/*---------- NAV BAR ----------*/
+header img {
+    max-width: .8rem;
+    width: 100%;
+}
+
+.nav-list {
+	padding: 1rem 0 1rem 1rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: rgb(235, 235, 235);
+}
+	
+.nav-item {
+	margin-right: 2rem;
+	font-weight: 600;
+    
+}
+	
+.nav-item a {
+	color:#198754;
+	letter-spacing: 1.2px;
+    border-radius: .5rem;
+    padding: .5rem;
+    transition: .25s;
+}
+	
+.nav-item:last-child {
+	margin-left: auto;
+	margin-right: 2rem;
+}
+
+header a:hover {
+	color:rgb(255, 255, 255);
+	background:#198754;
+}
+
+header .bouton-power-off:hover {
+	--couleur_logo: white ;
+	background:#198754;
+}
+
+.nav {
+    border-bottom: solid 1px rgb(200, 200, 200);
+}
+
+img {
+	transform: scale(1.6);
+	margin: 0 .5rem;
+}
+
+/*-------------------- NAV BAR --------------------*/
+
+/* -------------------- LOGO POWER OFF -------------------- */
+:root {
+    /* Taille */
+    --taille_logo: 1.5rem;
+
+    /* Couleur */
+    --couleur_logo: #198754;
+
+    /* Cercle central */
+    --taille_cercle: calc(var(--taille_logo) * 0.7);
+    --bordure_cercle: calc(var(--taille_logo) * 0.15);
+
+    /* Diametre arrondi cercle central */
+    --taille_boule: calc(var(--taille_logo) * 0.15);
+}
+
+.bouton-power-off {
+    width: var(--taille_logo);
+    height: var(--taille_logo);
+    background: transparent;
+    border: solid calc(var(--taille_logo) * 0.04) var(--couleur_logo);
+    border-radius: 50%;
+    position: absolute;
+	margin: 0 -2rem;
+    transition: .25s;
+}
+
+.bouton-power-off .cercle {
+    width: var(--taille_cercle);
+    height: var(--taille_cercle);
+    background: transparent;
+    border: solid var(--bordure_cercle);
+    border-radius: 50%;
+    border-color:  transparent var(--couleur_logo) var(--couleur_logo) var(--couleur_logo);
+    position: absolute;
+    top: calc(var(--taille_logo) * 0.11);
+    left: calc(var(--taille_logo) * 0.11);
+}
+
+.bouton-power-off .boule-cercle-gauche,
+.bouton-power-off .boule-cercle-droite {
+    width: var(--taille_boule);
+    height: var(--taille_boule);
+    background: var(--couleur_logo);
+    border-radius: 50%;
+    position: absolute;
+    top: calc(var(--taille_logo) * 0.2);
+}
+
+.bouton-power-off .boule-cercle-gauche {
+    left: calc(var(--taille_logo) * 0.181);
+
+}
+
+.bouton-power-off .boule-cercle-droite {
+    left: calc(var(--taille_logo) * 0.594);
+}
+
+.bouton-power-off .barre {
+    width: calc(var(--taille_logo) * 0.14);
+    height: calc(var(--taille_logo) * 0.46);
+    background: var(--couleur_logo);
+    border-radius: calc(var(--taille_logo) * 0.11);;
+    position: absolute;
+    top: calc(var(--taille_logo) * 0.1);
+    left: calc(var(--taille_logo) * 0.4);
+}
+/* -------------------- LOGO POWER OFF -------------------- */
+
+.global-container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	max-width: 1032px;
+    margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: .5rem 1rem;
+}
+
+@media screen and (max-width : 1850px){
+    .global-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        max-width: 1032px;
+        margin-top: 2rem;
+        margin-left: 406px;
+        margin-right: auto;
+        padding: .5rem 1rem;
+    }
+}
+
+@media screen and (max-width : 1450px){
+    .global-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        max-width: 1032px;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: .5rem 1rem;
+    }
+}

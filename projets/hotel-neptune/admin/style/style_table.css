@@ -1,0 +1,335 @@
+.actionTable button {
+    color: #198754;
+    background-color: #fff;
+    font-family: "Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    border: solid 1px #198754;
+    border-radius: .5rem;
+    padding: .5rem;
+    transition: .25s;
+}
+
+.actionTable button:hover {
+    color: #fff;
+    background-color: #198754;
+}
+
+table {
+    /*border-left: solid 1px #000;
+    border-top: solid 1px #000;*/
+    border: solid 1px #000;
+    border-spacing: 0;
+    /* border-width: 0 1px; */
+}
+
+table th, table td{
+    /*border-right: solid 1px #000;
+    border-bottom: solid 1px #000;*/
+    border: solid 1px #000;
+    padding: 0rem .5rem;
+}
+
+.actionTable {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 2rem .5rem;
+}
+
+.insert-bdd, .update-bdd, .trier-bdd, .search-bdd {
+    display: flex;
+	border: solid 1px #198754;
+	border-radius: 1rem;
+    font-family: "Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    padding: .5rem;
+    position: absolute;
+    left: 75px;
+    top: 260px;
+    max-width: 306px;
+    width: 100%;
+    min-height: 10rem;
+}
+
+button {
+	margin-top: 1.5rem;
+}
+
+.head-act-bdd {
+    border-bottom: solid 1px #198754;
+    padding-bottom: .5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.actionTable input {
+	border: solid 1px #198754;
+	border-radius: .4rem;
+    font-family: "Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    padding: .5rem;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+    max-width: 9.5rem;
+    width: 100%;
+	height: 1.5rem;
+    align-self: center;    
+}
+
+.actionTable select {
+	border: solid 1px #198754;
+	border-radius: .4rem;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+    max-width: 9.5rem;
+    width: 100%;
+	height: 1.5rem;
+    align-self: center;   
+    text-align: center; 
+}
+
+.formulaire {
+    display: grid;
+    width: 18rem;
+    grid-template-columns: 8rem 11rem;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.form-item {
+    display: block;
+    height: 4rem;
+
+}
+
+.bouton-haut {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+
+/* -------------------- SUP-ALL-STYLE -------------------- */
+.supp-all {
+    padding: .5rem;
+}
+
+.supp-all a {
+	color: #198754;
+	letter-spacing: 1.2px;
+    border: solid 1px #198754;
+    border-radius: .5rem;
+    padding: .5rem;
+    transition: .25s;
+}
+
+.supp-all a:hover {
+	color:rgb(255, 255, 255);
+	background:#198754;
+}
+/* -------------------- SUP-ALL-STYLE -------------------- */
+
+/* -------------------- INSERT-LINE-STYLE -------------------- */
+.insert-line {
+    padding: .5rem;
+}
+
+.insert-line a {
+	color: #198754;
+	letter-spacing: 1.2px;
+    border: solid 1px #198754;
+    border-radius: .5rem;
+    padding: .5rem;
+    transition: .25s;
+}
+
+.insert-line a:hover {
+	color:rgb(255, 255, 255);
+	background:#198754;
+}
+/* -------------------- INSERT-LINE-STYLE -------------------- */
+
+/* -------------------- TRIE-STYLE -------------------- */
+.search {
+    padding: .5rem;
+}
+
+.search a {
+	color: #198754;
+	letter-spacing: 1.2px;
+    border: solid 1px #198754;
+    border-radius: .5rem;
+    padding: .5rem;
+    transition: .25s;
+}
+
+.search a:hover {
+	color:rgb(255, 255, 255);
+	background:#198754;
+}
+/* -------------------- TRIE-STYLE -------------------- */
+
+/* -------------------- SEARCH-STYLE -------------------- */
+.trier {
+    padding: .5rem;
+}
+
+.trier a {
+	color: #198754;
+	letter-spacing: 1.2px;
+    border: solid 1px #198754;
+    border-radius: .5rem;
+    padding: .5rem;
+    transition: .25s;
+}
+
+.trier a:hover {
+	color:rgb(255, 255, 255);
+	background:#198754;
+}
+/* -------------------- SEARCH-STYLE -------------------- */
+
+
+/* ------------------------------ Boutons action ------------------------------ */
+
+
+
+
+/* --------------- Boutons 'Ajouter une ligne' --------------- */
+#insert-bdd {
+    display:none;
+}
+#afficher:target #insert-bdd {
+    display:block
+}
+.masquer {
+    display:none;
+}
+#afficher:target .masquer {
+    display:inline;
+}
+#afficher:target .afficher {
+    display:none;
+}
+/* --------------- Boutons 'Ajouter une ligne' --------------- */
+
+/* --------------- Boutons 'Supprimer tout' --------------- */
+#update-bdd {
+    display:none;
+}
+#afficher2:target #update-bdd {
+    display:block
+}
+.masquer2 {
+    display:none;
+}
+#afficher2:target .masquer2 {
+    display:inline;
+}
+#afficher2:target .afficher2 {
+    display:none;
+}
+/* --------------- Boutons 'Supprimer tout' --------------- */
+
+/* --------------- Boutons 'Trier' --------------- */
+#trier-bdd {
+    display:none;
+}
+#afficher3:target #trier-bdd {
+    display:block
+}
+.masquer3 {
+    display:none;
+}
+#afficher3:target .masquer3 {
+    display:inline;
+}
+#afficher3:target .afficher3 {
+    display:none;
+}
+/* --------------- Boutons 'Trier' --------------- */
+
+/* --------------- Boutons 'Recherche' --------------- */
+#search-bdd {
+    display:none;
+}
+#afficher4:target #search-bdd {
+    display:block
+}
+.masquer4 {
+    display:none;
+}
+#afficher4:target .masquer4 {
+    display:inline;
+}
+#afficher4:target .afficher4 {
+    display:none;
+}
+/* --------------- Boutons 'Recherche' --------------- */
+
+
+
+
+/* ------------------------------ Boutons action ------------------------------ */
+
+img {
+    width: .7rem;
+}
+
+.radio {
+    display: grid;
+    width: 9.5rem;
+    grid-template-columns: 5.5rem 3rem;
+    /* background: #ddd; */
+}
+
+input[type='radio'] {
+    width:20px;
+    height:20px;
+    border:1px solid #198754;
+    accent-color: #198754;
+    margin: 0 2rem 0 .5rem;
+}
+
+.table-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.radio-item {
+    display: grid;
+    width: 3rem;
+    grid-template-columns: 1.5rem 1.5rem;
+    margin: .1rem 0;
+}
+
+
+
+@media screen and (max-width : 1850px){
+
+    .insert-bdd, .update-bdd {
+    	border: solid 1px #198754;
+    	border-radius: 1rem;
+        font-family: "Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        padding: .5rem;
+        position: absolute;
+        left: 50px;
+        top: 260px;
+    }
+}
+
+@media screen and (max-width : 1450px){
+
+    .insert-bdd, .update-bdd {
+    	border: solid 1px #198754;
+    	border-radius: 1rem;
+        font-family: "Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        padding: .5rem;
+        position: absolute;
+        left: auto;
+        right: auto;
+        top: 150px;
+    }
+    .responsive {
+        width: 100%;
+        height: 16rem;
+    }
+}

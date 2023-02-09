@@ -1,0 +1,70 @@
+img{
+    position: absolute;
+    display: flex;
+    left: 10%;
+    top: 25%;
+
+}
+
+.actionTable {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2rem .5rem;
+    color: #FFFFF5;
+
+}
+
+.update-bdd {
+    border: solid 1px #FFFFF5;
+    border-radius: 1rem;
+    font-family: "Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    padding: .5rem;
+    position:absolute;
+    top:200px;
+    background-color: #B59F84;
+    box-shadow: 2px 2px 2px #FFFFF5;
+    width: 250px;
+    height: 400px;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.update-bdd  button {
+    margin-top: 1rem;
+    background-color: #FFFFF5;
+}
+
+.boutton{
+    position: relative;
+    left:35px;
+}
+
+.actionTable button {
+
+    border: none;
+    outline: none;
+    background: #FFFFF5;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.actionTable button:active{
+    opacity: 0.5;
+}
+
+input[type="text"] {
+    background-color: #FFFFF5;
+    border: none;
+    border-radius: 5px;
+  }

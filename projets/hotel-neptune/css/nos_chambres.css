@@ -1,0 +1,64 @@
+#myNavbar {
+    background-color: lightblue;
+  }
+  
+  #myNavbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  #myNavbar li {
+    float: right;
+  }
+  
+  #myNavbar li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  
+  #myNavbar li.research {
+    float: none;
+    text-align: center;
+  }
+  
+  #myNavbar li.research a {
+    display: inline-block;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  body {
+    background: linear-gradient(to bottom, #00bfff 0%, #00bfff 40%, #3399ff 40%, #3399ff 60%, #66ccff 60%, #66ccff 100%);
+    animation: wave 5s linear infinite;
+  }
+  
+  @keyframes wave {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  @keyframes wave {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-15px);
+    }
+  }
+  
+  .wave:nth-of-type(2n) {
+    animation-delay: -2.5s;
+  }
+  
+  .wave:nth-of-type(2n+1) {
+    animation-delay: -5s;
+  }

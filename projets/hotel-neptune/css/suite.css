@@ -1,0 +1,32 @@
+
+
+.global-container-suite {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+
+.form-resa form .submit {
+    width: 10rem;
+}
+.form-resa form .date {
+    padding: .5rem;
+    border: solid 1px #000;
+    border-radius: 1rem;
+}
+
+.suite-chambre {
+    display: flex;
+    background: #fdf4e383;
+    width: 850px;
+    margin: 2rem;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+.img {
+    margin-left: auto;
+    margin-right: 2rem;
+    max-height: 180px;
+}
