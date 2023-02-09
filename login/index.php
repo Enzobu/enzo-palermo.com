@@ -60,16 +60,11 @@
 
     }
 
-    // if(array_key_exists('session', $_GET)) {
-    //     if ($_GET['session'] == 'destroy') {
-    //         session_destroy();
-    //         header('location: /');
-    //     }
-    // }
+    if(array_key_exists('session', $_GET)) {
+        if ($_GET['session'] == 'destroy') {
+            session_destroy();
+            header('location: /');
+        }
+    }
 
-    // foreach ($users as $user) {
-    //     if ($_SESSION['id'] == $user['id']) {
-    //         $a = $user['permission'];
-    //     }
-    // }
 ?>
