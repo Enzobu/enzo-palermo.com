@@ -3,6 +3,13 @@ function ajouter (){
     var element2 = document.getElementById("double-ligne");
     element1.classList.toggle("ligne-ajouter");
     element2.classList.toggle("ligne-ajouter");
+}
+
+function modifier (id){
+    var element1 = document.getElementById(id);
+    element1.classList.toggle("ligne-modifier");
+}
+
 function effacer (id){
     var element1 = document.getElementById(id);
     element1.classList.toggle("ligne-modifier");
