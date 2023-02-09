@@ -31,19 +31,20 @@
 
             <table class="tableau">
                 <tr class="ligne-ajouter" id="ligne-ajouter">
-                    <form action="/tableau-suivi-stage/index.php" method="GET"></form>
-                    <td> <input type="date" name="date_candid"> </td>
-                    <td> <input type="text" name="entreprise"> </td>
-                    <td> <input type="text" name="activite_secteur"> </td>
-                    <td> <input type="text" name="ville"> </td>
-                    <td> <input type="text" name="poste"> </td>
-                    <td> <input type="text" name="contact_nom"> </td>
-                    <td> <input type="number" name="contact_tel"> </td>
-                    <td> <input type="mail" name="contact_mail"> </td>
-                    <td> <input type="date" name="date_relance"> </td>
-                    <td> <input type="text" name="etat"> </td>
-                    <td> <input type="text" name="commentaire"> </td>
-                    <td> <input type="submit" value="Ajouter"> </td>
+                    <form action="/tableau-suivi-stage/inserer.php" method="GET">
+                        <td> <input type="date" name="date_candid" required="required" placeholder="Date de candidature"> </td>
+                        <td> <input type="text" name="entreprise" required="required" placeholder="Entreprise"> </td>
+                        <td> <input type="text" name="activite_secteur" required="required" placeholder="Activité / Secteur"> </td>
+                        <td> <input type="text" name="ville" required="required" placeholder="Ville"> </td>
+                        <td> <input type="text" name="poste" required="required" placeholder="Poste à pourvoir / Rechercher"> </td>
+                        <td> <input type="text" name="contact_nom" required="required" placeholder="Contact Nom"> </td>
+                        <td> <input type="text" name="contact_tel" required="required" placeholder="Contact Tel"> </td>
+                        <td> <input type="mail" name="contact_mail" required="required" placeholder="Contact Mail"> </td>
+                        <td> <input type="date" name="date_relance" required="required" placeholder="Date de relance prévue"> </td>
+                        <td> <input type="text" name="etat" required="required" placeholder="État"> </td>
+                        <td> <input type="text" name="commentaire" required="required" placeholder="Commentaire"> </td>
+                        <td> <input type="submit" value="Ajouter"> </td>
+                    </form>
                 </tr>
                 <tr class="ligne-ajouter" id="double-ligne">
                     <td></td>
@@ -66,8 +67,8 @@
                     <th>Ville</td>
                     <th>Poste pourvoir/rechercher</td>
                     <th>contact Nom</td>
-                    <th>Contact tel</td>
-                    <th>Contact mail</td>
+                    <th>Contact Tel</td>
+                    <th>Contact Mail</td>
                     <th>Date relance prévue</td>
                     <th>État</td>
                     <th>Commentaire</td>
@@ -86,7 +87,6 @@
                     <td> <?php echo $stages['date_relance']; ?> </td>
                     <td> <?php echo $stages['etat']; ?> </td>
                     <td> <?php echo $stages['commentaire']; ?> </td>
-                    <td> action </td>
                         <img src="/image/editer.svg" alt="Icone éditer" class="image-bouton-action" onclick="modifier(<?php echo $stages['id']; ?>);">
                     </td>
                 </tr>
