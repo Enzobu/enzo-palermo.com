@@ -24,6 +24,10 @@
 			text-transform: uppercase;
 			font-weight: 600;
 			
+			& .icon-nav {
+				width: 1.5rem;
+			}
+
 			& a {
 				color:rgb(0, 0, 0);
 				letter-spacing: 1.2px;
