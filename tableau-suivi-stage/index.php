@@ -75,24 +75,6 @@
                     <th>Action</td>
                 </tr>
                 <?php foreach ($stage as $stages){ ?>
-                <tr>
-                    <td> <?php echo $stages['date_candid']; ?> </td>
-                    <td> <?php echo $stages['entreprise']; ?> </td>
-                    <td> <?php echo $stages['activite_secteur']; ?> </td>
-                    <td> <?php echo $stages['ville']; ?> </td>
-                    <td> <?php echo $stages['poste']; ?> </td>
-                    <td> <?php echo $stages['contact_nom']; ?> </td>
-                    <td> <?php echo $stages['contact_tel']; ?> </td>
-                    <td> <?php echo $stages['contact_mail']; ?> </td>
-                    <td> <?php echo $stages['date_relance']; ?> </td>
-                    <td> <?php echo $stages['etat']; ?> </td>
-                    <td> <?php echo $stages['commentaire']; ?> </td>
-                    <td class="bouton-action-ligne">
-                        <!-- <a href="/tableau-suivi-stage/supprimer.php?id=<?php echo $stages['id']; ?>"><img src="/image/effacer_rouge.svg" alt="Icone effacer" class="image-bouton-action"></a> -->
-                        <img src="/image/effacer_rouge.svg" alt="Icone effacer" class="image-bouton-action" onclick="effacer(<?php echo $stages['id']; ?>);">
-                        <img src="/image/editer.svg" alt="Icone éditer" class="image-bouton-action" onclick="modifier(<?php echo $stages['id']; ?>);">
-                    </td>
-                </tr>
                 <tr class="ligne-modifier" id="<?php echo $stages['id']; ?>">
 
                     <form action="/tableau-suivi-stage/modifier.php" method="GET">
@@ -110,6 +92,24 @@
                         <td> <input type="text" name="commentaire" required="required" value="<?php echo $stages['commentaire']; ?> "> </td>
                         <td> <input type="submit" value="Modifier"> </td>
                     </form>
+                </tr>
+                <tr>
+                    <td> <?php echo $stages['date_candid']; ?> </td>
+                    <td> <?php echo $stages['entreprise']; ?> </td>
+                    <td> <?php echo $stages['activite_secteur']; ?> </td>
+                    <td> <?php echo $stages['ville']; ?> </td>
+                    <td> <?php echo $stages['poste']; ?> </td>
+                    <td> <?php echo $stages['contact_nom']; ?> </td>
+                    <td> <?php echo $stages['contact_tel']; ?> </td>
+                    <td> <?php echo $stages['contact_mail']; ?> </td>
+                    <td> <?php echo $stages['date_relance']; ?> </td>
+                    <td> <?php echo $stages['etat']; ?> </td>
+                    <td> <?php echo $stages['commentaire']; ?> </td>
+                    <td class="bouton-action-ligne">
+                        <!-- <a href="/tableau-suivi-stage/supprimer.php?id=<?php echo $stages['id']; ?>"><img src="/image/effacer_rouge.svg" alt="Icone effacer" class="image-bouton-action"></a> -->
+                        <img src="/image/effacer_rouge.svg" alt="Icone effacer" class="image-bouton-action" onclick="effacer(<?php echo $stages['id']; ?>);">
+                        <img src="/image/editer.svg" alt="Icone éditer" class="image-bouton-action" onclick="modifier(<?php echo $stages['id']; ?>);">
+                    </td>
                 </tr>
                 <?php } ?>
             </table>
