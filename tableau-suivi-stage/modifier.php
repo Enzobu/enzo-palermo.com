@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 include('../php/link_db.php');
 include('../php/isLoged.php');
 itsAllowed(10);

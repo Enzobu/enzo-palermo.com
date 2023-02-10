@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 $sql = "SELECT * FROM `users_enzo_palermo`";
 $requete = $db->query($sql);
 define("USERS", $requete->fetchAll());

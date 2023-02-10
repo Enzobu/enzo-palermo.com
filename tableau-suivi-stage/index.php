@@ -1,4 +1,5 @@
 <?php include('../php/link_db.php'); ?>
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="fr">
