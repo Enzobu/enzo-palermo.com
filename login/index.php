@@ -30,6 +30,9 @@
                             if ($_GET['error'] == 'falseValue') {
                                 echo 'Mauvais identifiant ou mot de passe';
                             }
+                            if ($_GET['error'] == 'newPass') {
+                                echo 'Après modification du mot de passe, reconnectez vous';
+                            }
                         }
                     ?>
                 </div>
