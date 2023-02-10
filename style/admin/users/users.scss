@@ -1,0 +1,112 @@
+.global-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+    & .title {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    & .bouton-action {
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+        padding: 1rem .5rem;
+        border: solid 0px;
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 0px 10px #9c9c9c;
+        text-align: center;
+        transition: .15s;
+        color: #000;
+        font-weight: 600;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+        
+        &:active {
+            background: rgb(242, 242, 242);
+        }
+    }
+    
+    & .global-tableau {
+
+        & .tableau {
+            border: solid 1px #000;
+            border-spacing: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+            max-width: 1600px;
+            
+            & .ligne-ajouter {
+                display: none;
+            }
+
+            & .ligne-modifier {
+                display: none;
+            }
+
+            & th, & td{
+                border: solid 1px #000;
+                padding: 0rem .5rem;
+            }
+            
+            & input {
+                width: 100%;
+                margin: .25rem;
+                border: solid 1px #c4c4c4;
+                border-radius: 5px;
+                height: 1.5rem;
+                padding: 0 .25rem;
+            }
+
+            & input[type='submit'] {
+                border: solid 0px;
+                border-radius: 10px;
+                background: rgba(255, 0, 0, 0.438);
+                box-shadow: 0px 0px 10px #9c9c9c;
+                text-align: center;
+                transition: .25s;
+                color: #000;
+                font-weight: 600;
+
+                &:hover {
+                    transform: translateY(-3px);
+                }
+
+                &:active {
+                    background: rgb(242, 242, 242);
+                }
+            }
+
+            & .image-bouton-action {
+                width: 1.5rem;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .global-container {
+        display: block;
+        
+        & .bouton {
+            display: flex;
+            justify-content: center;
+        }
+        & .global-tableau {
+            overflow: scroll;
+            margin: 0 .5rem;
+        }
+    }
+}
