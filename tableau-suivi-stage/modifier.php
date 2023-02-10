@@ -29,7 +29,7 @@ if (array_key_exists('id', $_GET) and !empty($_GET['id']) and
         $etat = $_GET['etat'];
         $commentaire = $_GET['commentaire'];
 
-        $sql = "UPDATE `tableau-recherche-stage` SET 
+        $sql = "UPDATE `tableau_recherche_stage` SET 
                     `date_candid`='$date_candid',
                     `entreprise`='$entreprise',
                     `activite_secteur`='$activite_secteur',

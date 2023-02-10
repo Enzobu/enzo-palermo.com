@@ -12,7 +12,7 @@ if ($_SERVER['SERVER_NAME'] == 'enzo-palermo.local') {
     define("DBHOST", "localhost");
     define("DBUSER", "root");
     define("DBPASS", "");
-    define("DBNAME", "tableauRechercheStage");
+    define("DBNAME", "enzo_palermo");
 }
 
 

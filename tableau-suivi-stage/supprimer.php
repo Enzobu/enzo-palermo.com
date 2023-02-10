@@ -5,7 +5,7 @@
 
     if (array_key_exists('id', $_GET)) {
         $id = $_GET['id'];
-        $sql = "DELETE FROM `tableau-recherche-stage` WHERE id = $id";
+        $sql = "DELETE FROM `tableau_recherche_stage` WHERE id = $id";
         $requete = $db->query($sql);
     }
     

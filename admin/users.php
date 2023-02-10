@@ -15,7 +15,7 @@
 
     <div class="global-container">
         <div class="title">
-            <h1>Tableau de suivi de la recherche de stage</h1>
+            <h1>Utiliateur</h1>
         </div>
         <div class="bouton">
             <button class="bouton-action" onclick="ajouter();">Ajouter une ligne</button>
@@ -23,7 +23,7 @@
         <div class="global-tableau">
             
             <?php
-                $sql = "SELECT * FROM `tableau_recherche_stage` ORDER BY `id` ASC";
+                $sql = "SELECT * FROM `users-enzo-palermo` ORDER BY `id` ASC";
                 $requete = $db->query($sql);
                 $stage = $requete->fetchAll();
             ?>

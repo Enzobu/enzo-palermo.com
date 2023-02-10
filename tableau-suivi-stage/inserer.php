@@ -27,7 +27,7 @@ if (array_key_exists('date_candid', $_GET) and !empty($_GET['date_candid']) and
         $etat = $_GET['etat'];
         $commentaire = $_GET['commentaire'];
 
-        $sql = "INSERT INTO `tableau-recherche-stage`
+        $sql = "INSERT INTO `tableau_recherche_stage`
                     (`date_candid`, `entreprise`, `activite_secteur`, `ville`, `poste`, `contact_nom`, `contact_tel`, `contact_mail`, `date_relance`, `etat`, `commentaire`) 
                     VALUES 
                     ('$date_candid', '$entreprise', '$activite_secteur', '$ville', '$poste', '$contact_nom', '$contact_tel', '$contact_mail', '$date_relance', '$etat', '$commentaire')";
