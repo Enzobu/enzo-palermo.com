@@ -13,6 +13,13 @@ function isLoged() {
     }
 }
 
+function loged() {
+    if (!isLoged()) {
+        header('Refresh: 0;url=/login/?error=notLog');
+        die();
+    }
+}
+
 function havePermission() {
     foreach (USERS as $user) {
         if ($_SESSION['id'] == $user['id']) {
