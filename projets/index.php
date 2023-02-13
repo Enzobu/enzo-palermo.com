@@ -6,8 +6,8 @@
     <?php include('../php/head.php'); ?>
     <title>Projets - Enzo Palermo</title>
 </head>
-<body>
-    <header class="header">
+<body class="body">
+    <header class="header" id="header">
         <?php include('../php/navbar.php'); ?>
     </header>
 
@@ -21,6 +21,10 @@
     <h2><a href="/projets/hi-mix" target="blank" style="a { color: #000; }">Hi-mix</a></h2>
     <h2><a href="/projets/hotel-neptune" target="blank" style="a { color: #000; }">Hotel Neptune</a></h2>
     <h2><a href="/projets/bts-lycee-jean-rostand" target="blank" style="a { color: #000; }">TOP-SECRET</a></h2>
+    <main class="main">
 
+    <footer class="footer" id="footer">
+        <?php include('../php/footer.php'); ?>
+    </footer>
 </body>
 </html>

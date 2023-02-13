@@ -13,8 +13,8 @@ loged()
     <link rel="stylesheet" href="/style/my-account/my-account.css">
     <title>Accueil - Enzo Palermo</title>
 </head>
-<body>
-    <header class="header">
+<body class="body">
+    <header class="header" id="header">
         <?php include('../php/navbar.php'); ?>
     </header>
 
@@ -23,6 +23,7 @@ loged()
             <h1>Utiliateur</h1>
         </div>
         <div class="modif-pass">
+    <main class="main">
 
             <div class="form">
                 <div class="title-update-pass">Modifier son mot de passe</div>
@@ -48,6 +49,10 @@ loged()
             </div>
         </div>
     </div>
+
+    <footer class="footer" id="footer">
+        <?php include('../php/footer.php'); ?>
+    </footer>
 </body>
 </html>
 

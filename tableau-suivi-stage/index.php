@@ -10,9 +10,8 @@
 </head>
 <body>
     <script src="/js/tableau_suivi_stage.js"></script>
-    <header class="header">
-        <?php include('../php/navbar.php'); ?>
-    </header>
+    <body class="body">
+        <header class="header" id="header">
 
     <div class="global-container">
         <div class="title">
@@ -28,6 +27,7 @@
                 $requete = $db->query($sql);
                 $stage = $requete->fetchAll();
             ?>
+        <main class="main">
 
 
             <table class="tableau">
@@ -117,4 +117,7 @@
         </div>
     </div>
 </body>
+        <footer class="footer" id="footer">
+            <?php include('../php/footer.php'); ?>
+        </footer>
 </html>

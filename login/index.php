@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/style/login/login.css">
     <title>Accueil - Enzo Palermo</title>
 </head>
-<body>
-    <header class="header">
+<body class="body">
+    <header class="header" id="header">
         <?php include('../php/navbar.php'); ?>
     </header>
 
@@ -23,6 +23,7 @@
                         if (array_key_exists('error', $_GET)) {
                             if ($_GET['error'] == 'notLog') {
                                 echo 'Il faut être connecter pour réaliser l\'action demander';
+    <main class="main">
                             }
                             if ($_GET['error'] == 'notAllowed') {
                                 echo 'Vous n\'avez pas les droits nécessaire pour réaliser l\'action demander';
@@ -40,6 +41,9 @@
             </form>
         </div>
     </div>
+    <footer class="footer" id="footer">
+        <?php include('../php/footer.php'); ?>
+    </footer>
 </body>
 </html>
 
