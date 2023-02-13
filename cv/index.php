@@ -14,13 +14,14 @@
         <?php include('../php/navbar.php'); ?>
     </header>
 
-    <div class="CV">
-        <img src="../image/CV_Enzo_Palermo.png" alt="CV">
-    </div>
-    <a href="https://drive.google.com/uc?export=download&id=1kfCyAQum7GG0pWeF_RZ7IPvV_3AQoXBf">
-        <div class="dnl">Télécharger le CV</div>
-    </a>
     <main class="main">
+        <div class="CV">
+            <img src="../image/CV_Enzo_Palermo.png" alt="CV">
+        </div>
+        <a href="https://drive.google.com/uc?export=download&id=1kfCyAQum7GG0pWeF_RZ7IPvV_3AQoXBf">
+            <div class="dnl">Télécharger le CV</div>
+        </a>
+    </main>
     
     <footer class="footer" id="footer">
         <?php include('../php/footer.php'); ?>
