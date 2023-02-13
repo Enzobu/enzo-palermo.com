@@ -24,6 +24,7 @@
                             if ($_GET['error'] == 'notLog') {
                                 echo 'Il faut être connecter pour réaliser l\'action demander';
     <main class="main">
+        <div class="bouton-cacher-responsive" onclick="changerLeft('0');"><img src="/image/menu.svg" alt=""></div>
                             }
                             if ($_GET['error'] == 'notAllowed') {
                                 echo 'Vous n\'avez pas les droits nécessaire pour réaliser l\'action demander';

@@ -28,6 +28,7 @@
                 $stage = $requete->fetchAll();
             ?>
         <main class="main">
+            <div class="bouton-cacher-responsive" onclick="changerLeft('0');"><img src="/image/menu.svg" alt=""></div>
 
 
             <table class="tableau">

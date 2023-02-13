@@ -24,6 +24,7 @@ loged()
         </div>
         <div class="modif-pass">
     <main class="main">
+        <div class="bouton-cacher-responsive" onclick="changerLeft('0');"><img src="/image/menu.svg" alt=""></div>
 
             <div class="form">
                 <div class="title-update-pass">Modifier son mot de passe</div>

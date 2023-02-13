@@ -1,4 +1,5 @@
 <nav class="nav">
+    <div class="bouton-cacher-responsive" onclick="changerLeft('-19rem');"><img src="/image/croix.svg" alt=""></div>
     <ul class="nav-list">
         <li class="nav-item"><a href="/">Enzo Palermo</a></li>
         <li class="nav-item"><a href="/cv">Mon CV</a></li>

@@ -22,6 +22,7 @@
     <h2><a href="/projets/hotel-neptune" target="blank" style="a { color: #000; }">Hotel Neptune</a></h2>
     <h2><a href="/projets/bts-lycee-jean-rostand" target="blank" style="a { color: #000; }">TOP-SECRET</a></h2>
     <main class="main">
+        <div class="bouton-cacher-responsive" onclick="changerLeft('0');"><img src="/image/menu.svg" alt=""></div>
 
     <footer class="footer" id="footer">
         <?php include('../php/footer.php'); ?>

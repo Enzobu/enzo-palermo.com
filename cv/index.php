@@ -15,6 +15,7 @@
     </header>
 
     <main class="main">
+        <div class="bouton-cacher-responsive" onclick="changerLeft('0');"><img src="/image/menu.svg" alt=""></div>
         <div class="CV">
             <img src="../image/CV_Enzo_Palermo.png" alt="CV">
         </div>
