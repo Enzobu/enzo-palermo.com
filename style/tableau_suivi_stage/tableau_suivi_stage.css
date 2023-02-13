@@ -1,13 +1,15 @@
 .global-container {
-  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   flex-direction: column;
-  width: 100vw;
+  width: 70vw;
   align-items: center;
   justify-content: center;
 }
 .global-container .title {
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 3.5rem;
 }
 .global-container .bouton-action {
   width: 15rem;
@@ -24,12 +26,19 @@
   transition: 0.15s;
   color: #000;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
 }
 .global-container .bouton-action:hover {
   transform: translateY(-4px);
 }
 .global-container .bouton-action:active {
   background: rgb(242, 242, 242);
+}
+.global-container .global-tableau {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin: 0 0.5rem;
 }
 .global-container .global-tableau .tableau {
   border: solid 1px #000;
@@ -38,7 +47,8 @@
   margin-right: auto;
   margin-top: 3rem;
   margin-bottom: 5rem;
-  max-width: 1600px;
+  width: 65vw;
+  overflow-y: scroll;
 }
 .global-container .global-tableau .tableau .ligne-ajouter {
   display: none;
@@ -75,9 +85,14 @@
   background: rgb(242, 242, 242);
 }
 .global-container .global-tableau .tableau .image-bouton-action {
-  width: 1.5rem;
+  width: 1.3rem;
 }
 
+@media only screen and (max-width: 1525px) {
+  .global-container .global-tableau .tableau {
+    width: 80vw;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .global-container {
     display: block;
@@ -87,7 +102,16 @@
     justify-content: center;
   }
   .global-container .global-tableau {
-    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: scroll;
     margin: 0 0.5rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .global-container {
+    width: 95vw;
+  }
+  .global-container .global-tableau {
+    width: 95vw;
   }
 }/*# sourceMappingURL=tableau_suivi_stage.css.map */

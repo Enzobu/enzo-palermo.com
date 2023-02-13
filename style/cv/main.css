@@ -1,83 +1,16 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  border-style: border-box;
-  list-style: none;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-}
-
-.header .nav-list {
-  padding: 1rem 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  box-shadow: -5px -5px 8px #000;
-}
-
-.header .nav-list .nav-item {
-  margin-right: 2rem;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.header .nav-list .nav-item a {
-  color: rgb(0, 0, 0);
-  letter-spacing: 1.2px;
-  position: relative;
-}
-
-.header .nav-list .nav-item a:after {
-  content: "";
-  bottom: -3px;
-  width: 0;
-  right: 0;
-  position: absolute;
-  height: 2px;
-  background: rgb(65, 199, 83);
-  transition: 0.4s width;
-  z-index: 5;
-}
-
-.header .nav-list .nav-item a:hover:after {
-  width: 100%;
-  left: 0;
-}
-
-.header .nav-list .nav-item a:active:after {
-  width: 100%;
-  left: 0;
-  transform: scale(1.1);
-  height: 3px;
-  transition: 0.08s;
-}
-
-.header .nav-list .nav-item:first-child {
-  margin-right: auto;
-  margin-left: 2rem;
-}
-
-.CV {
+.main .CV {
   max-width: 45vw;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
 }
-
-img {
+.main img {
   max-width: 45vw;
   width: 100%;
   box-shadow: 0px 0px 20px #999999;
 }
-
-.dnl {
+.main .dnl {
   width: 15rem;
   margin-left: auto;
   margin-right: auto;
@@ -92,17 +25,15 @@ img {
   color: #000;
   font-weight: 600;
 }
-
-.dnl:hover {
+.main .dnl:hover {
   transform: translateY(-4px);
 }
-
-.dnl:active {
+.main .dnl:active {
   background: rgb(242, 242, 242);
 }
 
 @media only screen and (max-width: 1000px) {
-  .CV {
+  .main .CV {
     max-width: 85vw;
     width: 100%;
     margin-left: auto;
@@ -111,7 +42,7 @@ img {
     margin-bottom: 3rem;
     box-shadow: 0px 0px 20px #999999;
   }
-  img {
+  .main img {
     max-width: 85vw;
     width: 100%;
   }

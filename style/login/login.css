@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 2.5rem;
+  margin-top: 2rem;
 }
 .login .form {
   margin: 1.5rem 0;
@@ -30,11 +31,16 @@
 }
 .login .form form .form-item {
   display: flex;
+  flex-wrap: wrap;
   margin: 0.25rem 0;
 }
 .login .form form .form-item input[type=text], .login .form form .form-item input[type=password] {
+  border: solid 1px #e7e7e7;
+  border-radius: 5px;
+  padding: 0.5rem;
+  box-shadow: 0 0 5px #d6d6d6;
+  background: #fff;
   margin-left: 1rem;
-  border: solid 1px #c4c4c4;
   border-radius: 5px;
   height: 1.5rem;
 }
@@ -54,4 +60,18 @@
 }
 .login .form form .form-item input[type=submit]:active {
   background: #ececec;
+}
+.login .form form .form-item:first-child input {
+  margin-left: 2.25rem;
+}
+
+@media only screen and (max-width: 433px) {
+  .login .form form .form-item {
+    flex-direction: column;
+  }
+  .login .form form .form-item input[type=text], .login .form form .form-item input[type=password] {
+    margin-top: 0.25rem;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+  }
 }/*# sourceMappingURL=login.css.map */
