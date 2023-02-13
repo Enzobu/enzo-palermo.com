@@ -12,36 +12,37 @@
         <?php include('../php/navbar.php'); ?>
     </header>
 
-    <div class="login">
-        <div class="form">
-            <div class="title">Se connecter :</div>
-            <form action="/login/index.php" method="post">
-                <div class="form-item">Identifiant : <input type="text" required="required" name='id' placeholder="Identifiant"></div>
-                <div class="form-item">Mot de passe : <input type="password" required="required" name='pass' placeholder="Mot de passe"></div>
-                <div class="error-message">
-                    <?php 
-                        if (array_key_exists('error', $_GET)) {
-                            if ($_GET['error'] == 'notLog') {
-                                echo 'Il faut être connecter pour réaliser l\'action demander';
     <main class="main">
         <div class="bouton-cacher-responsive" onclick="changerLeft('0');"><img src="/image/menu.svg" alt=""></div>
+        <div class="login">
+            <div class="form">
+                <div class="title">Se connecter :</div>
+                <form action="/login/index.php" method="post">
+                    <div class="form-item">Identifiant : <input type="text" required="required" name='id' placeholder="Identifiant"></div>
+                    <div class="form-item">Mot de passe : <input type="password" required="required" name='pass' placeholder="Mot de passe"></div>
+                    <div class="error-message">
+                        <?php 
+                            if (array_key_exists('error', $_GET)) {
+                                if ($_GET['error'] == 'notLog') {
+                                    echo 'Il faut être connecter pour réaliser l\'action demander';
+                                }
+                                if ($_GET['error'] == 'notAllowed') {
+                                    echo 'Vous n\'avez pas les droits nécessaire pour réaliser l\'action demander';
+                                }
+                                if ($_GET['error'] == 'falseValue') {
+                                    echo 'Mauvais identifiant ou mot de passe';
+                                }
+                                if ($_GET['error'] == 'newPass') {
+                                    echo 'Après modification du mot de passe, reconnectez vous';
+                                }
                             }
-                            if ($_GET['error'] == 'notAllowed') {
-                                echo 'Vous n\'avez pas les droits nécessaire pour réaliser l\'action demander';
-                            }
-                            if ($_GET['error'] == 'falseValue') {
-                                echo 'Mauvais identifiant ou mot de passe';
-                            }
-                            if ($_GET['error'] == 'newPass') {
-                                echo 'Après modification du mot de passe, reconnectez vous';
-                            }
-                        }
-                    ?>
-                </div>
-                <div class="form-item"><input type="submit" value="Se connecter"></div>
-            </form>
+                        ?>
+                    </div>
+                    <div class="form-item"><input type="submit" value="Se connecter"></div>
+                </form>
+            </div>
         </div>
-    </div>
+    </main>
     <footer class="footer" id="footer">
         <?php include('../php/footer.php'); ?>
     </footer>
