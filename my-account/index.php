@@ -18,38 +18,39 @@ loged()
         <?php include('../php/navbar.php'); ?>
     </header>
 
-    <div class="global-container">
-        <div class="title">
-            <h1>Utiliateur</h1>
-        </div>
-        <div class="modif-pass">
     <main class="main">
         <div class="bouton-cacher-responsive" onclick="changerLeft('0');"><img src="/image/menu.svg" alt=""></div>
+        <div class="global-container">
+            <div class="title">
+                <h1>Utiliateur</h1>
+            </div>
+            <div class="modif-pass">
 
-            <div class="form">
-                <div class="title-update-pass">Modifier son mot de passe</div>
-                <form action="" method="POST" class="form-update-pass">
-                    <div class="form-update-pass-input">Votre ancien mot de passe :<input type="password" name="hold_pass" placeholder="Ancien password" required></div>
-                    <div class="form-update-pass-input">Votre nouveau mot de passe :<input type="password" name="new_pass" placeholder="Nouveau password" required></div>
-                    <div class="form-update-pass-input">Répétez le nouveaux mot de passe :<input type="password" name="check_new_pass" placeholder="Nouveau password" required></div>
-                    <div class="error-message">
-                        <?php
-                            if (array_key_exists('error', $_GET)) {
-                                if ($_GET['error'] == 'wrongHoldPass') {
-                                    echo 'Mauvais mot de passe actuel';
+                <div class="form">
+                    <div class="title-update-pass">Modifier son mot de passe</div>
+                    <form action="" method="POST" class="form-update-pass">
+                        <div class="form-update-pass-input">Votre ancien mot de passe :<input type="password" name="hold_pass" placeholder="Ancien password" required></div>
+                        <div class="form-update-pass-input">Votre nouveau mot de passe :<input type="password" name="new_pass" placeholder="Nouveau password" required></div>
+                        <div class="form-update-pass-input">Répétez le nouveaux mot de passe :<input type="password" name="check_new_pass" placeholder="Nouveau password" required></div>
+                        <div class="error-message">
+                            <?php
+                                if (array_key_exists('error', $_GET)) {
+                                    if ($_GET['error'] == 'wrongHoldPass') {
+                                        echo 'Mauvais mot de passe actuel';
+                                    }
+                                    if ($_GET['error'] == 'wrongNewPass') {
+                                        echo 'les nouveaux mot de passe ne correspondent pas';
+                                    }
                                 }
-                                if ($_GET['error'] == 'wrongNewPass') {
-                                    echo 'les nouveaux mot de passe ne correspondent pas';
-                                }
-                            }
 
-                        ?>
-                    </div>
-                    <div class="form-update-pass-input"><input type="submit" value="Valider"></div>
-                </form>
+                            ?>
+                        </div>
+                        <div class="form-update-pass-input"><input type="submit" value="Valider"></div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer class="footer" id="footer">
         <?php include('../php/footer.php'); ?>
