@@ -9,6 +9,8 @@
     <title>Accueil - Enzo Palermo</title>
 </head>
 
+<body class="body">
+    <header class="header" id="header">
         <?php include('../php/navbar.php'); ?>
     </header>
 
