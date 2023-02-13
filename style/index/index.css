@@ -43,7 +43,7 @@
   height: 2.5rem;
   background: #F2542D;
   border-radius: 15px;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   transition: 0.2s;
 }
@@ -120,11 +120,10 @@
   }
 }
 @media only screen and (max-width: 1000px) {
-  .body .main .global-container {
-    padding: 3.5rem 1rem 1rem 1rem;
-  }
-  .body .main .global-container .portfolio {
-    margin: 0 0rem;
+  .body .main {
+    position: absolute;
+    height: 100vh;
+    overflow-y: scroll;
   }
   .body .main .global-container .portfolio .image-portfolio .cadre-image {
     position: absolute;
@@ -141,6 +140,18 @@
   }
   .body .main .global-container .portfolio .txt-presentation {
     width: calc(100vw - 26rem);
+    overflow-x: visible;
+    position: sticky;
+  }
+  .body .main .global-container .portfolio .presentation {
+    max-height: 100rem;
+    overflow-y: visible;
+    top: 0;
+    position: sticky;
+  }
+  .body .main .global-container .portfolio .presentation .global-competences {
+    margin-top: 3rem;
+    position: sticky;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -180,6 +191,9 @@
   }
 }
 @media only screen and (max-width: 400px) {
+  .body .main .global-container .portfolio .presentation .global-competences {
+    margin-top: 8rem;
+  }
   .body .main .global-container .portfolio .presentation .global-competences .competences .competence {
     margin: 1rem 0.25rem 1rem 1vw;
   }
