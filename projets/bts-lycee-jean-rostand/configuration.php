@@ -2,6 +2,7 @@
 define('VAR_LOGIN', 'login');
 define('VAR_PASSWORD', 'password');
 
+session_start();
 include('../../php/link_db.php');
 include('../../php/isLoged.php');
 itsAllowed(9);
