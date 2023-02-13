@@ -2,7 +2,13 @@
   padding: 3.5rem 1rem 1rem 1rem;
 }
 .body .main .global-container .portfolio {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 2rem;
+}
+.body .main .global-container .portfolio .image-portfolio {
+  display: flex;
+  width: 16rem;
 }
 .body .main .global-container .portfolio .image-portfolio .cadre-image {
   position: absolute;
@@ -14,14 +20,13 @@
 }
 .body .main .global-container .portfolio .image-portfolio img {
   width: 16rem;
-  position: absolute;
+  position: relative;
   box-shadow: 0 0 10px #a7a69b;
 }
 .body .main .global-container .portfolio .txt-presentation {
-  width: calc(60vw - 18rem);
-  margin-left: 20rem;
+  width: calc(60vw - 20rem);
+  margin-left: 4rem;
   max-height: 30vh;
-  overflow-x: scroll;
 }
 .body .main .global-container .portfolio .txt-presentation h1 {
   margin-bottom: 1.5rem;
@@ -31,6 +36,7 @@
   max-width: 50vw;
   text-align: justify;
   line-height: 1.6rem;
+  font-weight: 500;
 }
 .body .main .global-container .portfolio .txt-presentation .action {
   display: flex;
@@ -49,23 +55,21 @@
 }
 .body .main .global-container .portfolio .txt-presentation .action a .content {
   text-align: center;
+  color: #fff;
 }
 .body .main .global-container .portfolio .txt-presentation .action a:hover {
   transform: translateY(-4px);
+  box-shadow: 0 0 8px #f2542d;
 }
 .body .main .global-container .portfolio .presentation {
-  position: absolute;
-  max-height: 62vh;
-  overflow-y: scroll;
-  top: 37vh;
-}
-.body .main .global-container .portfolio .presentation .global-competences {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 .body .main .global-container .portfolio .presentation .global-competences .title {
   margin-bottom: 2rem;
 }
 .body .main .global-container .portfolio .presentation .global-competences .competences {
+  max-height: calc(100vh - 30rem);
+  overflow: scroll;
   display: flex;
   flex-wrap: wrap;
 }
@@ -78,17 +82,6 @@
 .body .main .global-container .portfolio .presentation .global-competences .competences .competence img {
   width: 5rem;
   margin: 0rem 1rem;
-}
-.body .main .global-container .portfolio .presentation .global-competences .competences .competence .python {
-  width: 7rem;
-  height: 5rem;
-}
-.body .main .global-container .portfolio .presentation .global-competences .competences .competence .python .img-python {
-  position: absolute;
-}
-.body .main .global-container .portfolio .presentation .global-competences .competences .competence .python .img-python-reverse {
-  position: absolute;
-  transform: rotate(180deg);
 }
 .body .main .global-container .portfolio .presentation .global-competences .competences .competence .competence-description {
   max-width: 15rem;
@@ -122,9 +115,7 @@
 }
 @media only screen and (max-width: 1000px) {
   .body .main {
-    position: absolute;
     height: 100vh;
-    overflow-y: scroll;
   }
   .body .main .global-container .portfolio .image-portfolio .cadre-image {
     position: absolute;
@@ -136,13 +127,13 @@
   }
   .body .main .global-container .portfolio .image-portfolio img {
     width: calc(10rem + 8vw);
-    position: absolute;
+    height: calc(10.5rem + 8vw);
+    position: relative;
     box-shadow: 0 0 10px #a7a69b;
   }
   .body .main .global-container .portfolio .txt-presentation {
     width: calc(100vw - 26rem);
-    overflow-x: visible;
-    position: sticky;
+    margin-left: 1;
   }
   .body .main .global-container .portfolio .presentation {
     max-height: 100rem;
@@ -160,20 +151,10 @@
     padding: 3.5rem 1rem 1rem 1rem;
   }
   .body .main .global-container .portfolio {
-    margin: 0rem;
-  }
-  .body .main .global-container .portfolio .image-portfolio .cadre-image {
-    top: 7vh;
-    left: calc((100vw - (10rem + 8vw)) / 2);
-  }
-  .body .main .global-container .portfolio .image-portfolio img {
-    top: 7vh;
-    left: calc((100vw - (10rem + 8vw)) / 2);
+    margin: 0rem 1rem;
   }
   .body .main .global-container .portfolio .txt-presentation {
-    width: 85vw;
-    margin-left: 1vw;
-    margin-top: calc(13rem + 8vw);
+    margin-left: 1.5rem;
   }
   .body .main .global-container .portfolio .txt-presentation p {
     margin-top: 1.5rem;
@@ -191,15 +172,55 @@
     top: 60vh;
   }
 }
+@media only screen and (max-width: 775px) {
+  .body .main .global-container .portfolio .presentation .global-competences .competences {
+    max-height: calc(100vh - 33rem);
+  }
+}
+@media only screen and (max-width: 730px) {
+  .body .main {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .body .main .global-container .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .body .main .global-container .portfolio .image-portfolio {
+    display: flex;
+    width: 14rem;
+  }
+  .body .main .global-container .portfolio .image-portfolio .cadre-image {
+    position: absolute;
+  }
+  .body .main .global-container .portfolio .txt-presentation {
+    margin: 3rem 0 0 0;
+    width: 60%;
+  }
+  .body .main .global-container .portfolio .presentation {
+    margin-top: 0;
+  }
+  .body .main .global-container .portfolio .presentation .global-competences .competences {
+    overflow: visible;
+    margin-bottom: 2rem;
+    max-height: 100%;
+  }
+}
 @media only screen and (max-width: 400px) {
-  .body .main .global-container .portfolio .presentation .global-competences {
-    margin-top: 8rem;
+  .body .main .global-container .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .body .main .global-container .portfolio .presentation .global-competences .competences .competence {
-    margin: 1rem 0.25rem 1rem 1vw;
+  .body .main .global-container .portfolio .image-portfolio {
+    display: flex;
+    width: 14rem;
   }
-  .body .main .global-container .portfolio .presentation .global-competences .competences .competence img {
-    width: 20vw;
-    margin: 0rem 1vw;
+  .body .main .global-container .portfolio .txt-presentation {
+    margin: 3rem 0 0 0;
+    width: 85%;
   }
 }/*# sourceMappingURL=index.css.map */
