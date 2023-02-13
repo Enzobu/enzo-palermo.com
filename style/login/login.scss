@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 2.5rem;
-
+    margin-top: 2rem;
     
     & .form{
         margin: 1.5rem 0;
@@ -32,14 +32,20 @@
 
             & .form-item {
                 display: flex;
+                flex-wrap: wrap;
                 margin: .25rem 0;
                 
                 & input[type='text'], & input[type='password'] {
+                    border: solid 1px #e7e7e7;
+                    border-radius: 5px;
+                    padding: .5rem;
+                    box-shadow: 0 0 5px #d6d6d6;
+                    background: #fff;
                     margin-left: 1rem;
-                    border: solid 1px #c4c4c4;
                     border-radius: 5px;
                     height: 1.5rem;
                 }
+
                 & input[type='submit'] {
                     border: solid 1px #e7e7e7;
                     border-radius: 5px;
@@ -61,7 +67,33 @@
                 }
             }
 
-            
+            & .form-item:first-child {
+
+                & input {
+                    margin-left: 2.25rem;
+                }
+            }  
         }
     }
+}
+
+@media only screen and (max-width: 433px) {
+    .login {
+        
+        & .form{
+
+            & form {
+    
+                & .form-item {
+                    flex-direction: column;
+                    & input[type='text'], & input[type='password'] {
+                        margin-top: .25rem;
+                        margin-left: 1rem;
+                        margin-bottom: .3rem;
+                    }
+                }
+            }
+        }
+    }
+
 }
