@@ -2,6 +2,7 @@
 define('VAR_LOGIN', 'login');
 define('VAR_PASSWORD', 'password');
 
+session_start();
 include('../../php/link_db.php');
 include('../../php/isLoged.php');
 itsAllowed(9);
@@ -14,6 +15,10 @@ const MAPPING = [
 
 function getFileFromUrl(){
     $url = getVar('url');
+    if($url == 'github'){
+        header('Refresh: 0;url=https://github.com/Enzobu/enzo-palermo.com/tree/bts-lycee-jean-rostand');
+        die();
+    }
     if(is_bool($url)){
         $url = '';
     }
