@@ -1,0 +1,85 @@
+.global-container {
+    margin: 3rem 1.5rem 1rem;
+
+    & .title {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    & .projets {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 3rem - 1.2rem - 2.5rem - 4rem);
+        overflow-x: scroll;
+        margin-top: 2.5rem;
+
+        & .projet {
+            display: flex;
+            flex-direction: column;
+            margin: .5rem 1.5rem 1rem;
+            padding: .5rem;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #e6e6d9;
+
+            & .projet-title {
+                text-align: center;
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-bottom: 2rem;
+            }
+
+            & .global-projet-description {
+                display: flex;
+                padding: 1rem;
+                
+                & .image-projet {
+                    max-width: 25rem;
+                    border-radius: 15px;
+                    box-shadow: 0 0 10px #a7a69b;
+                }
+
+                & .description {
+                    margin: 0 1.5rem;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    text-align: justify;
+                }
+
+                & .bouton-action {
+                    display: flex;
+                    margin-top: 2rem;
+
+                    & .bouton {
+                        display: flex;
+                        height: 2.5rem;
+                        margin: 1rem 1.5rem;
+                        padding: .5rem;
+                        background: #F2542D;
+                        transition: .2s;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 15px;
+                        font-size: 1.1rem;
+                        font-weight: 500;
+
+                        & img {
+                            width: 1.5rem;
+                            margin-left: .5rem;
+                        }
+
+                        &:hover {
+                            transform: translateY(-4px);
+                            box-shadow: 0 0 8px #f2542d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .remarque {
+        position: absolute;
+        top: auto;
+        bottom: 1rem;
+    }
+}

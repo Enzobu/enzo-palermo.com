@@ -1,0 +1,73 @@
+.global-container {
+  margin: 3rem 1.5rem 1rem;
+}
+.global-container .title {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.global-container .projets {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 3rem - 1.2rem - 2.5rem - 4rem);
+  overflow-x: scroll;
+  margin-top: 2.5rem;
+}
+.global-container .projets .projet {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 1.5rem 1rem;
+  padding: 0.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #e6e6d9;
+}
+.global-container .projets .projet .projet-title {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.global-container .projets .projet .global-projet-description {
+  display: flex;
+  padding: 1rem;
+}
+.global-container .projets .projet .global-projet-description .image-projet {
+  max-width: 25rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #a7a69b;
+}
+.global-container .projets .projet .global-projet-description .description {
+  margin: 0 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
+}
+.global-container .projets .projet .global-projet-description .bouton-action {
+  display: flex;
+  margin-top: 2rem;
+}
+.global-container .projets .projet .global-projet-description .bouton-action .bouton {
+  display: flex;
+  height: 2.5rem;
+  margin: 1rem 1.5rem;
+  padding: 0.5rem;
+  background: #F2542D;
+  transition: 0.2s;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.global-container .projets .projet .global-projet-description .bouton-action .bouton img {
+  width: 1.5rem;
+  margin-left: 0.5rem;
+}
+.global-container .projets .projet .global-projet-description .bouton-action .bouton:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 8px #f2542d;
+}
+.global-container .remarque {
+  position: absolute;
+  top: auto;
+  bottom: 1rem;
+}/*# sourceMappingURL=projets.css.map */
