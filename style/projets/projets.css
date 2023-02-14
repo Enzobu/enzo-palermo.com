@@ -1,9 +1,9 @@
 .global-container {
   margin: 3rem 1.5rem 1rem;
 }
-.global-container .title {
+.global-container .title h1 {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 .global-container .projets {
   display: flex;
@@ -29,26 +29,29 @@
 .global-container .projets .projet .global-projet-description {
   display: flex;
   padding: 1rem;
+  align-items: center;
 }
 .global-container .projets .projet .global-projet-description .image-projet {
   max-width: 25rem;
   border-radius: 15px;
   box-shadow: 0 0 10px #a7a69b;
 }
-.global-container .projets .projet .global-projet-description .description {
+.global-container .projets .projet .global-projet-description .projet-description .description {
   margin: 0 1.5rem;
   font-size: 1.2rem;
   font-weight: 500;
   text-align: justify;
 }
-.global-container .projets .projet .global-projet-description .bouton-action {
+.global-container .projets .projet .global-projet-description .projet-description .bouton-action {
   display: flex;
   margin-top: 2rem;
 }
-.global-container .projets .projet .global-projet-description .bouton-action .bouton {
+.global-container .projets .projet .global-projet-description .projet-description .bouton-action a {
+  margin: 1rem 1.5rem;
+}
+.global-container .projets .projet .global-projet-description .projet-description .bouton-action a .bouton {
   display: flex;
   height: 2.5rem;
-  margin: 1rem 1.5rem;
   padding: 0.5rem;
   background: #F2542D;
   transition: 0.2s;
@@ -58,11 +61,11 @@
   font-size: 1.1rem;
   font-weight: 500;
 }
-.global-container .projets .projet .global-projet-description .bouton-action .bouton img {
+.global-container .projets .projet .global-projet-description .projet-description .bouton-action a .bouton img {
   width: 1.5rem;
   margin-left: 0.5rem;
 }
-.global-container .projets .projet .global-projet-description .bouton-action .bouton:hover {
+.global-container .projets .projet .global-projet-description .projet-description .bouton-action a .bouton:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 8px #f2542d;
 }
@@ -70,4 +73,105 @@
   position: absolute;
   top: auto;
   bottom: 1rem;
+}
+
+@media only screen and (max-width: 1250px) {
+  .global-container {
+    margin: 2.5rem 1rem 1rem;
+  }
+  .global-container .projets .projet .global-projet-description .image-projet {
+    max-width: 18rem;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .global-container {
+    margin: 2.5rem 1rem 1rem;
+    height: calc(100vh - 6rem);
+    overflow-x: scroll;
+  }
+  .global-container .projets {
+    overflow: visible;
+  }
+  .global-container .projets .projet .global-projet-description {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .global-container .projets .projet .global-projet-description .image-projet {
+    max-width: 60vw;
+    margin-bottom: 1rem;
+  }
+  .global-container .projets .projet .global-projet-description .projet-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .global-container .projets .projet .global-projet-description .projet-description .description {
+    margin: 0 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: justify;
+    width: 60vw;
+  }
+  .global-container .projets .projet .global-projet-description .projet-description .bouton-action {
+    display: flex;
+    margin-top: 2rem;
+  }
+  .global-container .projets .projet .global-projet-description .projet-description .bouton-action a {
+    margin: 1rem 1.5rem;
+  }
+  .global-container .projets .projet .global-projet-description .projet-description .bouton-action a .bouton {
+    display: flex;
+    height: 2.5rem;
+    padding: 0.5rem;
+    background: #F2542D;
+    transition: 0.2s;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .global-container .projets .projet .global-projet-description .projet-description .bouton-action a .bouton img {
+    width: 1.5rem;
+    margin-left: 0.5rem;
+  }
+  .global-container .projets .projet .global-projet-description .projet-description .bouton-action a .bouton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 8px #f2542d;
+  }
+  .global-container .remarque {
+    position: absolute;
+    top: auto;
+    bottom: 1rem;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .global-container .title h1 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .global-container .projets .projet .global-projet-description .image-projet {
+    max-width: 60vw;
+    margin-bottom: 1rem;
+  }
+  .global-container .remarque {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .global-container .projets .projet .global-projet-description .image-projet {
+    max-width: 60vw;
+    margin-bottom: 1rem;
+  }
+  .global-container .projets .projet .global-projet-description .projet-description .description {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    width: 60vw;
+  }
+  .global-container .projets .projet .global-projet-description .projet-description .bouton-action a {
+    margin: 0.5rem 0.5rem;
+  }
 }/*# sourceMappingURL=projets.css.map */

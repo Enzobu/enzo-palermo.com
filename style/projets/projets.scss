@@ -2,8 +2,10 @@
     margin: 3rem 1.5rem 1rem;
 
     & .title {
-        text-align: center;
-        font-size: 1.2rem;
+        & h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
     }
 
     & .projets {
@@ -31,6 +33,7 @@
             & .global-projet-description {
                 display: flex;
                 padding: 1rem;
+                align-items: center;
                 
                 & .image-projet {
                     max-width: 25rem;
@@ -38,38 +41,44 @@
                     box-shadow: 0 0 10px #a7a69b;
                 }
 
-                & .description {
-                    margin: 0 1.5rem;
-                    font-size: 1.2rem;
-                    font-weight: 500;
-                    text-align: justify;
-                }
+                & .projet-description {
 
-                & .bouton-action {
-                    display: flex;
-                    margin-top: 2rem;
-
-                    & .bouton {
-                        display: flex;
-                        height: 2.5rem;
-                        margin: 1rem 1.5rem;
-                        padding: .5rem;
-                        background: #F2542D;
-                        transition: .2s;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 15px;
-                        font-size: 1.1rem;
+                    & .description {
+                        margin: 0 1.5rem;
+                        font-size: 1.2rem;
                         font-weight: 500;
+                        text-align: justify;
+                    }
+                
+                    & .bouton-action {
+                        display: flex;
+                        margin-top: 2rem;
 
-                        & img {
-                            width: 1.5rem;
-                            margin-left: .5rem;
-                        }
+                        & a {
+                            margin: 1rem 1.5rem;
 
-                        &:hover {
-                            transform: translateY(-4px);
-                            box-shadow: 0 0 8px #f2542d;
+                            & .bouton {
+                                display: flex;
+                                height: 2.5rem;
+                                padding: .5rem;
+                                background: #F2542D;
+                                transition: .2s;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 15px;
+                                font-size: 1.1rem;
+                                font-weight: 500;
+
+                                & img {
+                                    width: 1.5rem;
+                                    margin-left: .5rem;
+                                }
+
+                                &:hover {
+                                    transform: translateY(-4px);
+                                    box-shadow: 0 0 8px #f2542d;
+                                }
+                            }
                         }
                     }
                 }
@@ -81,5 +90,163 @@
         position: absolute;
         top: auto;
         bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .global-container {
+        margin: 2.5rem 1rem 1rem;
+    
+        & .projets {
+    
+            & .projet {
+    
+                & .global-projet-description {
+                    
+                    & .image-projet {
+                        max-width: 18rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .global-container {
+        margin: 2.5rem 1rem 1rem;
+        height: calc(100vh - 6rem);
+        overflow-x: scroll;
+    
+        & .projets {
+            overflow: visible;
+    
+            & .projet {
+    
+                & .global-projet-description {
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    & .image-projet {
+                        max-width: 60vw;
+                        margin-bottom: 1rem;
+                    }
+
+                    & .projet-description {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        & .description {
+                            margin: 0 1.5rem;
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                            text-align: justify;
+                            width: 60vw;
+                        }
+                    
+                        & .bouton-action {
+                            display: flex;
+                            margin-top: 2rem;
+    
+                            & a {
+                                margin: 1rem 1.5rem;
+    
+                                & .bouton {
+                                    display: flex;
+                                    height: 2.5rem;
+                                    padding: .5rem;
+                                    background: #F2542D;
+                                    transition: .2s;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 15px;
+                                    font-size: 1.1rem;
+                                    font-weight: 500;
+    
+                                    & img {
+                                        width: 1.5rem;
+                                        margin-left: .5rem;
+                                    }
+    
+                                    &:hover {
+                                        transform: translateY(-4px);
+                                        box-shadow: 0 0 8px #f2542d;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & .remarque {
+            position: absolute;
+            top: auto;
+            bottom: 1rem;
+            font-size: .8rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .global-container {
+
+        & .title {
+            & h1 {
+                text-align: center;
+                font-size: 1.8rem;
+            }
+        }
+        & .projets {
+    
+            & .projet {
+    
+                & .global-projet-description {
+                    
+                    & .image-projet {
+                        max-width: 60vw;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+
+        & .remarque {
+            font-size: .6rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .global-container {
+        & .projets {
+            & .projet {
+                & .global-projet-description {
+                    & .image-projet {
+                        max-width: 60vw;
+                        margin-bottom: 1rem;
+                    }
+                    & .projet-description {
+
+                        & .description {
+                            margin: 0 .5rem;
+                            font-size: 1rem;
+                            width: 60vw;
+                        }
+
+                        & .bouton-action {
+    
+                            & a {
+                                margin: .5rem .5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
