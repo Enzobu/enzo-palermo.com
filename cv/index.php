@@ -17,11 +17,8 @@
     <main class="main">
         <div class="bouton-cacher-responsive" onclick="changerLeft('0');"><img src="/image/menu.svg" alt=""></div>
         <div class="CV">
-            <img src="../image/CV_Enzo_Palermo.png" alt="CV">
+            <iframe src="CV_Enzo_Palermo.pdf"> </iframe>
         </div>
-        <a href="https://drive.google.com/uc?export=download&id=1kfCyAQum7GG0pWeF_RZ7IPvV_3AQoXBf">
-            <div class="dnl">Télécharger le CV</div>
-        </a>
     </main>
     
     <footer class="footer" id="footer">
