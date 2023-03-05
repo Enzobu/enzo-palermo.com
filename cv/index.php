@@ -17,7 +17,7 @@
     <main class="main">
         <div class="bouton-cacher-responsive" onclick="changerLeft('0');"><img src="/image/menu.svg" alt=""></div>
         <div class="CV">
-            <iframe src="CV_Enzo_Palermo.pdf"> </iframe>
+            <iframe src="CV_Enzo_Palermo.pdf#toolbar=0"> </iframe>
         </div>
     </main>
     
