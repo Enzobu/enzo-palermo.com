@@ -5,35 +5,24 @@
 }
 
 .mention {
-  margin-top: 4rem;
+  margin: 4rem 2rem;
+  height: 80vh;
+  overflow-y: scroll;
+  box-shadow: 0 0 5px #e6e6d9;
 }
 .mention a {
   display: flex;
   align-items: center;
-  margin: 1.5rem 2.5rem;
+  margin: 1.5rem 0.5rem;
   color: #211A1D;
   transition: 0.25s;
   box-shadow: 0 0 0 #ffffff;
   padding-left: 0.5rem;
+  width: 25rem;
 }
 .mention a img {
   width: 2rem;
-  margin-right: 0.2rem;
-}
-.mention a:nth-child(1) {
-  width: 24rem;
-}
-.mention a:nth-child(2) {
-  width: 27rem;
-}
-.mention a:nth-child(3) {
-  width: 22rem;
-}
-.mention a:nth-child(4) {
-  width: 22rem;
-}
-.mention a:nth-child(5) {
-  width: 22rem;
+  margin-right: 0.5rem;
 }
 .mention a:hover {
   background: #FAF9EF;
