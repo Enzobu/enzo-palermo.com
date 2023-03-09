@@ -89,9 +89,10 @@
                         
                         & .competences {
                             max-height: calc(100vh - 30rem);
-                            overflow: scroll;
+                            overflow-y: scroll;
                             display: flex;
                             flex-wrap: wrap;
+                            box-shadow: 0 0 5px #e6e6d9;
                             
                             & .competence {
                                 display: flex;
