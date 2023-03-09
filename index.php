@@ -95,6 +95,12 @@
                                     des analyses de données.
                                 </div>
                             </div>
+                            <div class="competence">
+                                <img src="/image/linux.png" alt="Logo Linux" class="competence-logo">
+                                <div class="competence-description">
+                                    Linux est un système d'exploitation complet. Il est très présent sur les système réseaux.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -108,6 +108,9 @@
 .body .main .global-container .portfolio .presentation .global-competences .competences .competence:nth-child(7) {
   box-shadow: 0 0 10px rgba(61, 122, 171, 0.5058823529);
 }
+.body .main .global-container .portfolio .presentation .global-competences .competences .competence:nth-child(8) {
+  box-shadow: 0 0 10px rgba(230, 151, 41, 0.4784313725);
+}
 
 @media only screen and (max-width: 1792px) {
   .body .main .global-container .portfolio .presentation .global-competences .competences {
