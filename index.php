@@ -25,12 +25,12 @@
                     </h1>
                     <p>
                         Je suis étudiant en première année à L'EPSI Montpellier. Je suis très 
-                        intéresser par l'univers qui s'offre à moi et, plus particulièrement, 
+                        intéressé par l'univers qui s'offre à moi et, plus particulièrement, 
                         par le développement avec un penchant pour le web.
                     </p>
                     <div class="action">
                         <a href="/cv"><div class="content">Voir mon CV</div></a>
-                        <a href="/cv/CV_Enzo_Palermo.pdf" download="CV_enzo_palermo"><div class="content">Télécherger mon CV</div></a>
+                        <a href="/cv/CV_Enzo_Palermo_DEV.pdf" download="CV_enzo_palermo"><div class="content">Télécherger mon CV</div></a>
                         <a href="mailto:enzo.palermo@epsi.fr"><div class="content">M'envoyer un mail</div></a>
                     </div>
                 </div>
