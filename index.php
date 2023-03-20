@@ -26,7 +26,7 @@
                     <p>
                         Je suis étudiant en première année à L'EPSI Montpellier. Je suis très 
                         intéressé par l'univers qui s'offre à moi et, plus particulièrement, 
-                        par le développement avec un penchant pour le web.
+                        par le développement avec <a href="/tableau-suivi-stage">un</a> penchant pour le web.
                     </p>
                     <div class="action">
                         <a href="/cv"><div class="content">Voir mon CV</div></a>
