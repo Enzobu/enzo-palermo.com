@@ -28,17 +28,17 @@
                     <table class="tableau">
                         <tr class="ligne-ajouter" id="ligne-ajouter">
                             <form action="/tableau-suivi-stage/inserer.php" method="GET">
-                                <td> <input type="date" name="date_candid" required="required" placeholder="Date de candidature"> </td>
-                                <td> <input type="text" name="entreprise" required="required" placeholder="Entreprise"> </td>
-                                <td> <input type="text" name="activite_secteur" required="required" placeholder="Activité / Secteur"> </td>
-                                <td> <input type="text" name="ville" required="required" placeholder="Ville"> </td>
-                                <td> <input type="text" name="poste" required="required" placeholder="Poste à pourvoir / Rechercher"> </td>
-                                <td> <input type="text" name="contact_nom" required="required" placeholder="Contact Nom"> </td>
-                                <td> <input type="text" name="contact_tel" required="required" placeholder="Contact Tel"> </td>
-                                <td> <input type="mail" name="contact_mail" required="required" placeholder="Contact Mail"> </td>
-                                <td> <input type="date" name="date_relance" required="required" placeholder="Date de relance prévue"> </td>
-                                <td> <input type="text" name="etat" required="required" placeholder="État"> </td>
-                                <td> <input type="text" name="commentaire" required="required" placeholder="Commentaire"> </td>
+                                <td> <input type="date" name="date_candid" placeholder="Date de candidature"> </td>
+                                <td> <input type="text" name="entreprise" placeholder="Entreprise"> </td>
+                                <td> <input type="text" name="activite_secteur" placeholder="Activité / Secteur"> </td>
+                                <td> <input type="text" name="ville" placeholder="Ville"> </td>
+                                <td> <input type="text" name="poste" placeholder="Poste à pourvoir / Rechercher"> </td>
+                                <td> <input type="text" name="contact_nom" placeholder="Contact Nom"> </td>
+                                <td> <input type="text" name="contact_tel" placeholder="Contact Tel"> </td>
+                                <td> <input type="mail" name="contact_mail" placeholder="Contact Mail"> </td>
+                                <td> <input type="date" name="date_relance" placeholder="Date de relance prévue"> </td>
+                                <td> <input type="text" name="etat" placeholder="État"> </td>
+                                <td> <input type="text" name="commentaire" placeholder="Commentaire"> </td>
                                 <td> <input type="submit" value="Ajouter"> </td>
                             </form>
                         </tr>
@@ -80,17 +80,17 @@
 
                             <form action="/tableau-suivi-stage/modifier.php" method="GET">
                                 <input type="hidden" name="id" value="<?php echo $stages['id']; ?>">
-                                <td> <input type="date" name="date_candid" required="required" value="<?php echo $stages['date_candid']; ?> "> </td>
-                                <td> <input type="text" name="entreprise" required="required" value="<?php echo $stages['entreprise']; ?> "> </td>
-                                <td> <input type="text" name="activite_secteur" required="required" value="<?php echo $stages['activite_secteur']; ?> "> </td>
-                                <td> <input type="text" name="ville" required="required" value="<?php echo $stages['ville']; ?> "> </td>
-                                <td> <input type="text" name="poste" required="required" value="<?php echo $stages['poste']; ?> "> </td>
-                                <td> <input type="text" name="contact_nom" required="required" value="<?php echo $stages['contact_nom']; ?> "> </td>
-                                <td> <input type="text" name="contact_tel" required="required" value="<?php echo $stages['contact_tel']; ?> "> </td>
-                                <td> <input type="mail" name="contact_mail" required="required" value="<?php echo $stages['contact_mail']; ?> "> </td>
-                                <td> <input type="date" name="date_relance" required="required" value="<?php echo $stages['date_relance']; ?> "> </td>
-                                <td> <input type="text" name="etat" required="required" value="<?php echo $stages['etat']; ?> "> </td>
-                                <td> <input type="text" name="commentaire" required="required" value="<?php echo $stages['commentaire']; ?> "> </td>
+                                <td> <input type="date" name="date_candid" value="<?php echo $stages['date_candid']; ?> "> </td>
+                                <td> <input type="text" name="entreprise" value="<?php echo $stages['entreprise']; ?> "> </td>
+                                <td> <input type="text" name="activite_secteur" value="<?php echo $stages['activite_secteur']; ?> "> </td>
+                                <td> <input type="text" name="ville" value="<?php echo $stages['ville']; ?> "> </td>
+                                <td> <input type="text" name="poste" value="<?php echo $stages['poste']; ?> "> </td>
+                                <td> <input type="text" name="contact_nom" value="<?php echo $stages['contact_nom']; ?> "> </td>
+                                <td> <input type="text" name="contact_tel" value="<?php echo $stages['contact_tel']; ?> "> </td>
+                                <td> <input type="mail" name="contact_mail" value="<?php echo $stages['contact_mail']; ?> "> </td>
+                                <td> <input type="date" name="date_relance" value="<?php echo $stages['date_relance']; ?> "> </td>
+                                <td> <input type="text" name="etat" value="<?php echo $stages['etat']; ?> "> </td>
+                                <td> <input type="text" name="commentaire" value="<?php echo $stages['commentaire']; ?> "> </td>
                                 <td> <input type="submit" value="Modifier"> </td>
                             </form>
                         </tr>
