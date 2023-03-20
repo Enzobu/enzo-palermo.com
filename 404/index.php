@@ -4,15 +4,22 @@
 <html lang="fr">
 <head>
     <?php include('../php/head.php'); ?>
-    <title>Accueil - Enzo Palermo</title>
+    <link rel="stylesheet" href="/style/projets/projets.css">
+    <title>Projets - Enzo Palermo</title>
 </head>
-<body>
-    <header class="header">
+<body class="body">
+    <header class="header" id="header">
         <?php include('../php/navbar.php'); ?>
     </header>
 
-    <h1>404 !</h1>
-    <h2>Mmmhh, il semblerait qu'il n'y ai rien par ici ou que la page soit en construction...</h2>
+    <main class="main">
+        <p>Erreur 404 :(</p>
+        <br>
+        <p>Il n'y a rien par ici !!!</p>
+    </main>
 
+    <footer class="footer" id="footer">
+        <?php include('../php/footer.php'); ?>
+    </footer>
 </body>
 </html>
