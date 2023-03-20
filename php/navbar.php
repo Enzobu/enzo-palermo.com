@@ -4,7 +4,7 @@
         <li class="nav-item"><a href="/">Enzo Palermo</a></li>
         <!-- <li class="nav-item"><a href="/cv">Mon CV</a></li> -->
         <li class="nav-item"><a href="/projets">Mes projets</a></li>
-        <li class="nav-item"><a href="/tableau-suivi-stage">Tableau suivi stage</a></li>
+        <!-- <li class="nav-item"><a href="/tableau-suivi-stage">Tableau suivi stage</a></li> -->
         <?php
             if (array_key_exists('id', $_SESSION)) {
                 echo '<li class="nav-item"><a href="/my-account"><img src="/image/compte_noir.svg" alt="Mon compte" class="icon-nav">Mon compte</a></li>';
